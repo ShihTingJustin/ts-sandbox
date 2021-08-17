@@ -47,5 +47,33 @@ job = 'programmer'
 let brand: 'apple' | 'samsung' | 'sony'
 brand = 'apple'
 
+// type alias
+const book1: {
+  name: string;
+  price: number;
+} = {
+  name: 'Learn TypeScript',
+  price: 300,
+};
+
+const book2: {
+  name: string;
+  price: number;
+} = {
+  name: 'Learn React from Hooks',
+  price: 320,
+};
+
+type Book = {
+  name: string;
+  price: number;
+}
+
+const book3: Book = {
+  name: 'Learn TypeScript',
+  price: 300,
+}
+
+
 
 console.log(occupation, height)
