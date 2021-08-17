@@ -114,4 +114,32 @@ const iphone11: MobilePhone = {
   CPU: 'A13',
 };
 
+interface Hardware_interface {
+  RAM: string;
+  CPU: string;
+}
+
+const hardware: Hardware_interface = {
+  RAM: '4GB',
+  CPU: 'A13'
+}
+
+interface Software_interface {
+  platform: string;
+  releasedAt: string;
+}
+
+interface MobilePhone_2 extends Software_interface, Hardware_interface {
+  price: number;
+  brand: string;
+}
+
+const iphone12: MobilePhone = {
+  platform: 'ios',
+  releasedAt: '20190919',
+  RAM: '4GB',
+  CPU: 'A13',
+};
+
+
 console.log(occupation, height)
