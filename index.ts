@@ -74,6 +74,44 @@ const book3: Book = {
   price: 300,
 }
 
+// union
+type Book_2 = {
+  author: string;
+  publishedAt: string;
+}
 
+type Device = {
+  brand: string;
+  releasedAt: string;
+}
+
+type Product = Book_2 | Device
+
+// example
+const book_4: Product = {
+  author: 'Justin',
+  publishedAt: '20200831',
+};
+
+
+// intersection
+type Software = {
+  platform: string;
+  releasedAt: string;
+};
+
+type Hardware = {
+  RAM: string;
+  CPU: string;
+};
+
+type MobilePhone = Software & Hardware
+
+const iphone11: MobilePhone = {
+  platform: 'ios',
+  releasedAt: '20190919',
+  RAM: '4GB',
+  CPU: 'A13',
+};
 
 console.log(occupation, height)
